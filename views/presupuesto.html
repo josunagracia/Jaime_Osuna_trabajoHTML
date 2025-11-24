@@ -24,22 +24,55 @@
             <a class="a-nav" href="./contacto.html">Contacto</a>
         </nav>
     </header>
-    <main class="myForm">
+    <main>
             <section class="formulario">
-                <form class="form-presupuesto" id="formulario" action="/enviar" method="POST" autocomplete="on">
+                <form class="form-presupuesto" id="formulario" action="/enviar" method="POST" autocomplete="on" enctype="multipart/form-data">
+                    <h3>Formulario</h3>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Escriba apellidos">
 
                     <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Escriba correo">
 
-                    <label for="producto">Producto:</label>
-                    <input type="text" id="producto" name="producto" required>
+                    <label for="Edad">Edad</label>
+                    <input type="number" id="edad" name="edad" placeholder="Escriba su edad">
 
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" required min="1">
+                    <label for="consola">Consola</label>
+                    <select id="consola" name="consola">
+                        <optgroup label="Playstation">
+                            <option value="disabled selected">Seleccione consola</option>
+                            <option value="ps5 digital">Playstation 5 Digital</option>
+                            <option value="ps5 slim">Playstation 5 Slim</option>
+                            <option value="ps5 pro">Playstation 5 Pro</option>
+                        </optgroup>
+                        <optgroup label="Xbox">
+                            <option value="xbox digital">Xbox Digital</option>
+                            <option value="xbox serie-x">Xbox Serie X</option>
+                            <option value="xbox-portable">Rog Xbox Ally</option>
+                        </optgroup>
+                        <button type="submit">Enviar</button>
+                    </select>
 
-                    <button type="submit">Enviar</button>
+                    <label for="control">Control</label>
+                    <select id="control" name="control">
+                        <optgroup label="Playstation">
+                            <option value="dualsense blanco/negro">Dualsense Blanco/Negro</option>
+                            <option value="dualsense gris/negro"> Dualsense Gris/Negro</option>
+                            <option value="dualsense verde"> Dualsense Verde</option>
+                            <option value="dualsense 30 aniversario">Dualsense 30th Aniversario</option>
+                        </optgroup>
+                        <optgroup label="Xbox">
+                            <option value="control negro">Control Negro</option>
+                            <option value="control blanco">Control Blanco</option>
+                            <option value="control verde">Control Verde</option>
+                            <option value="control azul">Control Azul</option>
+                        </optgroup>
+                    </select>
+                    <label for="comentario">Comentario</label><br>
+                    <textarea name="comentario" id="comentario" cols="=35" rows="10">Escriba comentario(Opcional)</textarea>
             </section>
     </main>
     <footer>
@@ -47,10 +80,10 @@
         <p> Dirección: Av. La Borbolla 45</p>
 
         <div class="footer2">
-            <a href="https://www.instagram.com/"><img src="../assets/images/icons8-instagram-64.png" alt="enlace a instagram"></a>
-            <a href="https://x.com/?lang=es"><img src="../assets/images/icons8-x-64.png" alt="enlace twitter"></a>
-            <a href="https://workspace.google.com/intl/es/gmail/"> <img src="../assets/images/icons8-gmail-64.png" alt="enlace a gmail"></a>
-            <a href="https://www.youtube.com/?app=desktop&hl=es"> <img src="../assets/images/icons8-youtube-64.png" alt="enlace a youtube"></a>
+            <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="enlace a instagram"></a>
+            <a href="https://x.com/?lang=es"><img src="../assets/images/twitter.png" alt="enlace twitter"></a>
+            <a href="https://workspace.google.com/intl/es/gmail/"> <img src="../assets/images/gmail.png" alt="enlace a gmail"></a>
+            <a href="https://www.youtube.com/?app=desktop&hl=es"> <img src="../assets/images/youtube.png" alt="enlace a youtube"></a>
         </div>
     </footer>
 </body>
