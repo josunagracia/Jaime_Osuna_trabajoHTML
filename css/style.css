@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 body{
     background: url('../assets/images/forza\ 2.jpg')center/cover no-repeat fixed;
+
 }
 
 /*******HEADER******/
@@ -287,6 +288,24 @@ main{
 
 /*INICIO PRESUPUESTO*/
 
+.myForm{
+    height: 100%;
+}
+.formulario{
+    height: 100%;
+}
+
+.form-presupuesto{
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+    
+    
 /*FIN PRESUPUESTO*/
 
 /******FOOTER*****/
@@ -302,6 +321,11 @@ footer{
     background-color:  rgba(231, 231, 231, 0.458);
     
 
+}
+
+footer{
+    max-width: 80%;
+    margin: auto;
 }
 
 footer img{
