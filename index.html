@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-    <!--cambiamos el lenguage a "es" ya que vamos a usar el español-->
+<!--cambiamos el lenguage a "es" ya que vamos a usar el español-->
 <html lang="es">
-    <!--Principales meta etiquetas-->
+<!--Principales meta etiquetas-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pagina web sobre videojuegos">
-    <meta name="keywords" content="Videojuegos, entretenimiento, PC, playstation, gta6, games, novedades videojuegos, nintendo, xbox, noticias videojuegos">
+    <meta name="keywords"
+        content="Videojuegos, entretenimiento, PC, playstation, gta6, games, novedades videojuegos, nintendo, xbox, noticias videojuegos">
     <meta name="robots" content="index, follow">
     <title>GamesFr</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <!--Dividimos el body en diferentes etiquetas; header, main y footer -->
+
 <body>
     <!--El header será la cabecera, en ella incluiremos logo, titulo y barra de navegación-->
     <header>
-        <a href="./index.html"> <img src="./assets/images/icons8-juego-de-azar-64.png" alt="icono de inicio"  class="img-nav"> <h1>GamesFr</h1></a>
-        
+        <a href="./index.html"> <img src="./assets/images/icons8-juego-de-azar-64.png" alt="icono de inicio"
+                class="img-nav">
+            <h1>GamesFr</h1>
+        </a>
+
+        <input type="checkbox" name="check-menu" id="check-menu" class="check-menu">
+
 
         <nav class="bar-nav">
+
             <a href="./views/noticias.html">Noticias</a>
             <a href="./views/productos.html">Productos</a>
             <a href="./views/presupuesto.html">Presupuesto</a>
             <a href="./views/contacto.html">Contacto</a>
-            
+
+
         </nav>
+
+        <label for="check-menu" class="label-check">
+            <img src="./assets/images/icons8-desplegable-64.png" alt="icono menu hamburguesa" width="60px"
+                height="60px">
+        </label>
     </header>
     <main>
         <section class="contenedor-inicio">
@@ -34,41 +49,47 @@
         </section>
         <section>
             <div class="noticias">
-                <img src="./assets/images/noticias.jpg" alt="imagen noticias de videojuegos">
+            <a href="./views/noticias.html"><img src="./assets/images/noticias.jpg" alt="imagen noticias de videojuegos"></a> 
 
                 <div class="cont-noticias">
                     <p>En esta apartado hablaremos de las ultimas noticias de actualidad.</p>
-                    <p>Trataremos todas las novedades relacionadas con el mundo de los videojuegos y todo lo que les rodea, nuevas consolas, actualizaciones, premios y mucho mas.</p>
-                    <p>Para obtener mas información entra en el apartado noticias que tienes en la barra de navegación</p>
+                    <p>Trataremos todas las novedades relacionadas con el mundo de los videojuegos y todo lo que les
+                        rodea, nuevas consolas, actualizaciones, premios y mucho mas.</p>
+                    <p>Para obtener mas información entra en el apartado noticias que tienes en la barra de
+                        navegación</p>
                 </div>
             </div>
         </section>
         <section class="consolas">
             <div class="cont-consola">
                 <h2 class="h2-1">Consolas</h2>
-                <img src="./assets/images/consolas 2.jpg" alt="imagen con videoconsolas" width="1109px" height="624">
+                <a href="./views/productos.html"><img src="./assets/images/consolas 2.jpg"
+                        alt="imagen con videoconsolas" width="1109px" height="624"></a>
             </div>
-            <div class="cont-consola"> 
+            <div class="cont-consola">
                 <h2 class="h2-2">Videojuegos</h2>
-                <img src="./assets/images/videojuegos.webp" alt="imagen con diferentes videojuegos" width="600px" height="600px">
+                <a href="./views/productos.html#juegos"><img src="./assets/images/videojuegos.webp"
+                        alt="imagen con diferentes videojuegos" width="600px" height="600px"></a>
             </div>
         </section>
-
-        
     </main>
     <!--Footer será el pié de página donde añadiremos la dirección, enlaces y aviso legal-->
     <footer>
-        
+
         <p>Aviso de privacidad</p>
         <p> Dirección: Av. La Borbolla 45</p>
 
         <div class="footer2">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="./assets/images/instagram.png" alt="enlace a instagram"></a>
-            <a href="https://x.com/?lang=es" target="_blank" rel="noopener"><img src="./assets/images/twitter.png" alt="enlace twitter"></a>
-            <a href="https://workspace.google.com/intl/es/gmail/" target="_blank" rel="noopener"> <img src="./assets/images/gmail.png" alt="enlace a gmail"></a>
-            <a href="https://www.youtube.com/?app=desktop&hl=es" target="_blank" rel="noopener"> <img src="./assets/images/youtube.png" alt="enlace a youtube"></a>  
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="./assets/images/instagram.png"
+                    alt="enlace a instagram"></a>
+            <a href="https://x.com/?lang=es" target="_blank" rel="noopener"><img src="./assets/images/twitter.png"
+                    alt="enlace twitter"></a>
+            <a href="https://workspace.google.com/intl/es/gmail/" target="_blank" rel="noopener"> <img
+                    src="./assets/images/gmail.png" alt="enlace a gmail"></a>
+            <a href="https://www.youtube.com/?app=desktop&hl=es" target="_blank" rel="noopener"> <img
+                    src="./assets/images/youtube.png" alt="enlace a youtube"></a>
         </div>
     </footer>
 </body>
-</html>
 
+</html>

@@ -1,12 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 body{
     background: url('../assets/images/forza\ 2.jpg')center/cover no-repeat fixed;
-
 }
 
 /*******HEADER******/
@@ -22,8 +21,6 @@ header{
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px); 
     z-index: 100;
-    
-    
 }
 
 header a{
@@ -31,7 +28,7 @@ header a{
     align-items: center;
     padding: 0 10px;
     text-decoration: none;
-    animation: presentacion 3s;
+    animation: presentacion 1s;
     
 }
 
@@ -41,7 +38,6 @@ header h1{
     background-clip: text;
     color: transparent;
     text-decoration: none;
-
 }
 
 
@@ -57,11 +53,17 @@ header h1{
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
-    animation: presentacion 5s;
-
+    animation: presentacion 2s;
+    flex-wrap: nowrap;
 }
 
+.check-menu{
+    display: none;
+}
 
+.label-check{
+    display: none;
+}
 
 .bar-nav a{
     text-decoration: none;
@@ -75,12 +77,9 @@ header h1{
     transition: 0.5s;
 }
 
-
-
 .bar-nav .a-nav-active{
     color:  rgb(168, 101, 255) ;
 }
-
 
 /****MAIN****/
 
@@ -98,7 +97,7 @@ main{
     background: linear-gradient( rgba(231, 231, 231, 0.458)75%,  rgba(231, 231, 231, 0));
     height: 50vh;
     padding-top: 20%;
-    animation: presentacion 7s;
+    animation: presentacion 1s;
     font-size: 40px;
 }
 
@@ -107,10 +106,7 @@ main{
 
 }
 
-
 /*INDEX NOTICIA*/
-
-
 .noticias{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -130,13 +126,16 @@ main{
     box-shadow:  -4px 10px 10px;
 }
 
+.noticias img:hover{
+    transform: translateY(-10px);
+}
 /*INDEX CONSOLAS*/
 
 .consolas{
     padding: 20px;
-    background: linear-gradient(rgba(231, 231, 231, 0), rgba(231, 231, 231, 0.458)75%);
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
+    place-items: center;
     padding-bottom: 20vh;
     
 
@@ -145,6 +144,11 @@ main{
 .cont-consola{
     text-align: center;
 }
+
+.cont-consola:hover{
+    transform: translateY(-10px);
+}
+
 
 .cont-consola h2{
     background: linear-gradient(rgba(255, 255, 255, 0.856)22%, rgba(119, 119, 119, 0.808));
@@ -155,22 +159,118 @@ main{
 
 
 .consolas img{
-    width: 400px;
-    height: 300px;
-    
+    width: 100vh;
+    height: 50vh;
+    box-shadow: 1vh 1vh 2vh black; 
 }
 
 /*****FIN SECTIONS DE INDEX*****/
 
 /*****INICIO NOTICIAS*****/
+
+
+
+.noticias img{
+    width: 80vh;
+    height: 50vh;
+    box-shadow: 1vh 1vh 2vh black;
+}
+
+.noticias h2{
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: 1vh 1vh 2vh black;
+    text-align: center;
+}
+
+.gta6{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10vh;
+    font-family: "MiFuente";
+    place-items: center;
+}
+
+.gta6 p{
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: 1vh 1vh 2vh black;
+}
+
+.text-gta{
+    z-index: 12;
+    padding: 5vh;
+    margin-left: 30vh;
+    margin-right: -20vh;
+}
+
+.titulo-gta{
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;                 
+    width: 60%;                    
+    margin: 20px auto;             
+    color: white;
+}
+
+.forza{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10vh;
+    font-family: "MiFuente";
+    place-items: center;
+}
+
+.forza p{
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: 1vh 1vh 2vh black;
+}
+
+.text-forza{
+    z-index: 12;
+    padding: 5vh;
+    margin-left: -20vh;
+    margin-right: 20vh;
+}
+
+.titulo-forza{
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;                 
+    width: 60%;                    
+    margin: 20px auto;             
+    color: white; 
+    text-align: center;           
+}
+
+.text-forza h3{
+    text-align: right;
+}
+
+.awards{
+    text-align: center;
+}
+
+.text-awards{
+    margin: 2vh;
+    padding: 1vh;
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: 1vh 1vh 2vh black;
+}
+
+.titulo-award{
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;                 
+    width: 34%;                    
+    margin: 20px auto;             
+    color: white; 
+    text-align: center;
+}
+
 /*****FIN NOTICIAS*****/
 
 
 /*****INICIO PRUDUCTOS*****/
-.productos-h2{
-    padding-top: 15vh;
-    text-align: center;
-}
+
 .productos{
     text-align: center;
     padding: 10vh;
@@ -193,7 +293,6 @@ main{
     margin-top: 4vh;
     margin-bottom: 4vh;
     background: linear-gradient(rgba(255, 255, 255, 0.856)22%, rgba(119, 119, 119, 0.808));
-
 }
 
 .playstation{
@@ -235,6 +334,7 @@ main{
     box-shadow: 1vh 1vh 2vh black;
     
 }
+
 .color-mandos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -243,6 +343,7 @@ main{
     border-radius: 2vh;
     padding: 1vh 0;
 }
+
 .color-mandos p{
     background: linear-gradient(rgba(255, 255, 255, 0.596)22%, rgb(119, 119, 119));
     margin-inline: 10vh;
@@ -276,7 +377,6 @@ main{
     width: 50vh;
     height: 55vh;
     box-shadow: 1vh 1vh 2vh black;
-    
 }
 
 .xbox-portable{
@@ -284,13 +384,32 @@ main{
     height: 35vh;
     box-shadow: 1vh 1vh 2vh black;
 }
+
+.juegos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 1vh 0;
+}
+
+.juegos img{
+    width: 40vh;
+    height: 40vh;
+    box-shadow: 1vh 1vh 2vh black;
+}
+
+.juegos p{
+    background: linear-gradient(rgba(255, 255, 255, 0.856)22%, rgba(119, 119, 119, 0.808));
+    margin-inline: 10vh;
+    padding: 1vh;
+    border-radius: 2vh;
+    margin-top: 2vh;
+    box-shadow: 1vh 1vh 2vh black;
+}
 /*****FIN PRUDUCTOS*****/
 
 /*INICIO PRESUPUESTO*/
-
-
 .formulario{
-    text-align: center;
     background: linear-gradient( rgba(231, 231, 231, 0.458)75%,  rgba(231, 231, 231, 0));
     padding-top: 5%;
 }
@@ -311,13 +430,13 @@ main{
     margin: auto;
     box-shadow: 1vh 1vh 2vh black;
     border-radius: 2vh;
-    
 }
 
-input{
+.form-presupuesto input{
     width: 60%;
     border-radius: 0.5vh;
 }
+
 
 select{
     border-radius: 0.5vh;
@@ -330,36 +449,143 @@ textarea{
     resize: none;
     border-radius: 0.5vh;
 }
-    
+
+.privacidad {
+    display: flex;
+    align-items: start;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.text-check{
+    font-size: 14px;
+    margin-left: 0px;
+
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    margin-top: 1vh;
+
+}
     
 /*FIN PRESUPUESTO*/
 
+/*INICIO CONTACTO*/
+
+.contacto{
+    text-align: center;
+    padding-top: 15vh;
+    font-family: "MiFuente";
+}
+.contacto img{
+    width: 90vh;
+    height: 60vh;
+    box-shadow: 1vh 1vh 2vh black;
+    margin-top: 5vh;
+
+}
+
+/*FIN CONTACTO*/
+
 /******FOOTER*****/
 footer{
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     position: relative;
     justify-content: space-between;
-    padding: 0 20px;
     align-items: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(rgba(231, 231, 231, 0), rgba(231, 231, 231, 0.458)75%); ;
     margin-top: 33vh;
-
 }
 
-
+footer p{
+    padding-left: 20px;
+}
 
 footer img{
     width: 50px;
     height: 50px;
 }
 
-.footer2{
-    padding: 0 20px;
-}
+@media (max-width: 1024px){
+    .check-menu{
+        display: none;
 
+
+    }
+
+    .label-check{
+        display: block;
+ 
+
+    }
+
+    .bar-nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0; /*se pone a la derecha*/
+        width: 100%; /*coge todo el ancho*/
+        gap: 0; /*sin espacio entre los elementos*/
+
+    }
+
+    .bar-nav a{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        background-color: rgb(227, 227, 227);
+        border-bottom: 1px solid black; 
+
+    }
+
+    .check-menu:checked + .bar-nav{
+        display: flex;
+        animation: presentacion 0.5s
+    }
+
+    .consolas{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .playstation{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .mandos{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .xbox{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .juegos{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .noticias{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+}
 
 @font-face {
     font-family:"MiFuente";
@@ -379,39 +605,85 @@ footer img{
 }
 
 @media (max-width: 768px){
-    main{
-        flex-wrap: wrap;
-    }
-    .productos{
-        flex-wrap: wrap;
-        position: relative;
+    .consolas{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
     }
 
     .playstation{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-    .playstation p{
-        margin-bottom: 2vh;
+        grid-template-columns: 1fr;
         place-items: center;
     }
-    .productos h3, .productos h4{
-        text-align: center;
-    }
+
     .mandos{
-        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
     }
 
     .xbox{
-        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
     }
-    .xbox p{
-        margin-bottom: 2vh;
+
+    .juegos{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
     }
-    footer{
-        max-width: 100%;
+
+    .noticias{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .gta6{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        width:100vh ;
+    }
+
+    .text-gta{
+        width: 80vh;
+       
+    }
+    .text-gta6 p{
+        margin-right: 20vh ;
+    }
+
+    .forza{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        width:100vh ;
+    }
+
+    .text-forza{
+        width: 80vh;
+    }
+
+    .text-forza p{
+        margin-left: 15vh ;
+    }
+
+    .awards{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        width:100vh ;
+    }
+
+    .text-awards{
+        width: 40vh;
+    }
+    .text-awards p{
+        width: 40vh;
     }
 }
+
 
 
