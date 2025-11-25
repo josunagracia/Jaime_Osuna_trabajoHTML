@@ -512,7 +512,7 @@ footer img{
     height: 50px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 768px){
     .check-menu{
         display: none;
 
@@ -606,7 +606,7 @@ footer img{
     
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
     .consolas{
         display: grid;
         grid-template-columns: 1fr;
