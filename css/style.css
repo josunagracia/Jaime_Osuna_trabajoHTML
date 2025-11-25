@@ -530,7 +530,7 @@ footer img{
     
 }
 
-@media (max-width: 576px) and (orientation: portrait) {
+@media (max-width: 571px){
     .check-menu{
     display: none;
     }
