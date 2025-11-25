@@ -512,82 +512,7 @@ footer img{
     height: 50px;
 }
 
-@media (max-width: 768px){
-    .check-menu{
-        display: none;
 
-
-    }
-
-    .label-check{
-        display: block;
- 
-
-    }
-
-    .bar-nav{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0; /*se pone a la derecha*/
-        width: 100%; /*coge todo el ancho*/
-        gap: 0; /*sin espacio entre los elementos*/
-
-    }
-
-    .bar-nav a{
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        width: 100%;
-        background-color: rgb(227, 227, 227);
-        border-bottom: 1px solid black; 
-
-    }
-
-    .check-menu:checked + .bar-nav{
-        display: flex;
-        animation: presentacion 0.5s
-    }
-
-    .consolas{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .playstation{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .mandos{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .xbox{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .juegos{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .noticias{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-}
 
 @font-face {
     font-family:"MiFuente";
@@ -606,7 +531,7 @@ footer img{
     
 }
 
-@media (max-width: 576px) and (orientation: portrait) {
+@media (max-width: 571px) and (orientation: portrait) {
     .consolas{
         display: grid;
         grid-template-columns: 1fr;
