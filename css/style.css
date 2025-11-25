@@ -683,6 +683,16 @@ footer img{
     .text-awards p{
         width: 40vh;
     }
+
+    footer{
+        position: fixed;   /* o absolute si lo prefieres */
+        bottom: 0;
+        left: 0;
+        width: 100%;       /* ★ Clave: ocupa todo el ancho */
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px 0;
+        text-align: center;
+    }
 }
 
 
