@@ -606,7 +606,7 @@ footer img{
     
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) and (orientation: portrait) {
     .consolas{
         display: grid;
         grid-template-columns: 1fr;
