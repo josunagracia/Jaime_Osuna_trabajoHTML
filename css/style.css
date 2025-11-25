@@ -497,8 +497,10 @@ footer{
     justify-content: space-between;
     align-items: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(rgba(231, 231, 231, 0), rgba(231, 231, 231, 0.458)75%); ;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)75%); ;
     margin-top: 33vh;
+    text-align: center;
+    color: rgb(168, 168, 168);
 }
 
 footer p{
@@ -685,10 +687,9 @@ footer img{
     }
 
     footer{
-        position: fixed;   /* o absolute si lo prefieres */
         bottom: 0;
         left: 0;
-        width: 100%;       /* ★ Clave: ocupa todo el ancho */
+        width: 100%;       
         background-color: rgba(0, 0, 0, 0.6);
         padding: 20px 0;
         text-align: center;
