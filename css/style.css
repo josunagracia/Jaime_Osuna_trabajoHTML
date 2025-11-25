@@ -530,13 +530,17 @@ footer img{
     
 }
 
-@media (max-width: 571px) and (orientation: portrait) {
-    .check-menu{
-    display: none;
+@media (max-width: 576px){
+        .check-menu{
+        display: none;
+
+
     }
 
     .label-check{
         display: block;
+ 
+
     }
 
     .bar-nav{
