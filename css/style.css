@@ -532,15 +532,11 @@ footer img{
 
 @media (max-width: 576px) and (orientation: portrait) {
     .check-menu{
-        display: none;
-
-
+    display: none;
     }
 
     .label-check{
         display: block;
- 
-
     }
 
     .bar-nav{
@@ -568,6 +564,7 @@ footer img{
         display: flex;
         animation: presentacion 0.5s
     }
+    
     .consolas{
         display: grid;
         grid-template-columns: 1fr;
