@@ -569,17 +569,17 @@ footer img{
         animation: presentacion 0.5s
     }
     
-    .consolas .playstation .mandos .xbox .juegos .noticias{
+    .consolas, .playstation, .mandos, .xbox, .juegos, .noticias{
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
     }
 
-    .gta6  .forza .awards{
+    .gta6, .forza, .awards{
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
-        width:100vh ;
+        width:100% ;
     }
 
     .text-gta{
@@ -650,19 +650,18 @@ footer img{
         display: flex;
         animation: presentacion 0.5s
     }
-    
  
-     .consolas .playstation .mandos .xbox .juegos .noticias{
+    .consolas, .playstation, .mandos, .xbox, .juegos, .noticias{
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
     }
 
-    .gta6  .forza .awards{
+    .gta6, .forza, .awards{
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
-        width:100vh ;
+        width:100% ;
     }
 
     .text-gta .text-forza{
