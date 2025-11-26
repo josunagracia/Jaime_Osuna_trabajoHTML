@@ -530,8 +530,8 @@ footer img{
     
 }
 
-@media (max-width: 576px){
-        .check-menu{
+@media (max-width:1024px){
+    .check-menu{
         display: none;
 
 
@@ -569,42 +569,13 @@ footer img{
         animation: presentacion 0.5s
     }
     
-    .consolas{
+    .consolas .playstation .mandos .xbox .juegos .noticias{
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
     }
 
-    .playstation{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .mandos{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .xbox{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .juegos{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-
-    .noticias{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
-    .gta6{
+    .gta6  .forza .awards{
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
@@ -619,13 +590,6 @@ footer img{
         margin-right: 20vh ;
     }
 
-    .forza{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
-        width:100vh ;
-    }
-
     .text-forza{
         width: 80vh;
     }
@@ -634,11 +598,87 @@ footer img{
         margin-left: 15vh ;
     }
 
-    .awards{
+
+    .text-awards{
+        width: 40vh;
+    }
+    .text-awards p{
+        width: 40vh;
+    }
+
+    footer{
+        bottom: 0;
+        left: 0;
+        width: 100%;       
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 576px){
+    .check-menu{
+        display: none;
+    }
+
+    .label-check{
+        display: block;
+    }
+
+    .bar-nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0; /*se pone a la derecha*/
+        width: 100%; /*coge todo el ancho*/
+        gap: 0; /*sin espacio entre los elementos*/
+
+    }
+
+    .bar-nav a{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        background-color: rgb(227, 227, 227);
+        border-bottom: 1px solid black; 
+    }
+
+    .check-menu:checked + .bar-nav{
+        display: flex;
+        animation: presentacion 0.5s
+    }
+    
+ 
+     .consolas .playstation .mandos .xbox .juegos .noticias{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .gta6  .forza .awards{
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
         width:100vh ;
+    }
+
+    .text-gta{
+        width: 80vh;
+       
+    }
+    .text-gta6 p{
+        margin-right: 20vh ;
+    }
+
+    .text-forza{
+        width: 80vh;
+    }
+
+    .text-forza p{
+        margin-left: 15vh ;
     }
 
     .text-awards{
