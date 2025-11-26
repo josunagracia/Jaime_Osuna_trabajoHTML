@@ -665,7 +665,7 @@ footer img{
         width:100vh ;
     }
 
-    .text-gta{
+    .text-gta .text-forza{
         width: 80vh;
        
     }
@@ -673,20 +673,14 @@ footer img{
         margin-right: 20vh ;
     }
 
-    .text-forza{
-        width: 80vh;
-    }
-
     .text-forza p{
         margin-left: 15vh ;
     }
 
-    .text-awards{
+    .text-awards .text-awards p{
         width: 40vh;
     }
-    .text-awards p{
-        width: 40vh;
-    }
+
 
     footer{
         bottom: 0;

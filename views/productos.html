@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<!--cambiamos el lenguage a "es" ya que vamos a usar el español-->
+<!--cambiamos el lenguage a "es" para el español-->
 <html lang="es">
 <!--Principales meta etiquetas-->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,28 +14,35 @@
 </head>
 
 <body>
+    <!--cabecera con logo, titulo y barra de navegación-->
     <header>
         <a href="../index.html"><img src="../assets/images/icons8-juego-de-azar-64.png" alt="icono de inicio"
                 class="img-nav">
             <h1>GamesFr</h1>
         </a>
+        <!--logo con check para desglosar el menu cuando se haga la pagia mas pequeña-->
         <input type="checkbox" name="check-menu" id="check-menu" class="check-menu">
-
+        <!--barra de navegación-->
         <nav class="bar-nav">
             <a class="a-nav" href="./noticias.html">Noticias</a>
             <a class="a-nav-active" href="#">Productos</a>
             <a class="a-nav" href="./presupuesto.html">Presupuesto</a>
             <a class="a-nav" href="./contacto.html">Contacto</a>
         </nav>
+        <!-- imagen de logo para hacer check-->
         <label for="check-menu" class="label-check">
             <img src="../assets/images/icons8-desplegable-64.png" alt="icono menu hamburguesa" width="60px" height="60px">
         </label>
     </header>
     <main>
+        <!--dividimos página en diferentes secciones-->
+        <!--seccion general de productos-->
         <section>
+            <!-- productos de Sony-->
             <section class="productos">
                 <h3>Productos Sony</h3>
                 <div>
+                    <!--consolas deSsony-->
                     <div>
                         <h4>Consolas</h4>
                     </div>
@@ -54,6 +60,7 @@
                             <p>Playstation 5 Pro</p>
                         </div>
                     </div>
+                    <!--mandos de Sony-->
                     <div>
                         <h4>Dualsense</h4>
                     </div>
@@ -78,11 +85,11 @@
                     </div>
                 </div>
             </section>
-
-
+            <!--productos de Microsoft-->
             <section class="productos">
                 <h3>Productos de Microsoft</h3>
                 <div>
+                    <!--consolas de Microsoft-->
                     <div>
                         <h4>Consolas</h4>
                     </div>
@@ -101,6 +108,7 @@
                             <p>Xbox Series X</p>
                         </div>
                     </div>
+                    <!--Mandos de Microsoft-->
                     <div>
                         <h4>Mandos</h4>
                     </div>
@@ -124,8 +132,10 @@
                     </div>
                 </div>
             </section>
+            <!--sección de videojuegos-->
             <section class="productos">
                 <h3 id="juegos">Videojuegos</h3>
+                <!--videojuegos para ps5-->
                 <div>
                     <h4>Vdeojuegos ps5</h4>
                 </div>
@@ -148,6 +158,7 @@
                         <p>Monster Hunters Wilds</p>
                     </div>
                 </div>
+                <!--videojuegos para xbox-->
                 <div>
                     <h4>Videojuegos Xbox</h4>
                 </div>
@@ -171,7 +182,9 @@
 
                 </div>
             </section>
+        </section>
     </main>
+    <!--footer de página con direcciones, enlaces y aviso legal-->
     <footer>
         <p>Aviso de privacidad</p>
         <p> Dirección: Av. La Borbolla 45</p>
@@ -179,10 +192,8 @@
         <div class="footer2">
             <a href="https://www.instagram.com/"><img src="../assets/images/instagram.png" alt="enlace a instagram"></a>
             <a href="https://x.com/?lang=es"><img src="../assets/images/twitter.png" alt="enlace twitter"></a>
-            <a href="https://workspace.google.com/intl/es/gmail/"> <img src="../assets/images/gmail.png"
-                    alt="enlace a gmail"></a>
-            <a href="https://www.youtube.com/?app=desktop&hl=es"> <img src="../assets/images/youtube.png"
-                    alt="enlace a youtube"></a>
+            <a href="https://workspace.google.com/intl/es/gmail/"> <img src="../assets/images/gmail.png" alt="enlace a gmail"></a>
+            <a href="https://www.youtube.com/?app=desktop&hl=es"> <img src="../assets/images/youtube.png" alt="enlace a youtube"></a>
         </div>
     </footer>
 </body>
