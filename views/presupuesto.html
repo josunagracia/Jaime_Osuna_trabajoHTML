@@ -34,26 +34,26 @@
     <main>
         <!--sección formulario-->
         <section class="formulario">
-            <form class="form-presupuesto" id="formulario" action="/enviar" method="POST" autocomplete="on" enctype="multipart/form-data">
+            <form class="form-presupuesto" id="formulario" action="enviar" method="post" autocomplete="on" enctype="multipart/form-data">
                 <h3>Formulario</h3>
                 <!--label para nombre-->
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,30}" required>
                 <!--label para apellido-->
                 <label for="apellido">Apellidos:</label>
-                <input type="text" id="apellido" name="apellidos" placeholder="Escriba apellidos">
+                <input type="text" id="apellido" name="apellidos" placeholder="Escriba apellidos" pattern="[A-Z a-z]{3,30}" required>
                 <!--label para email-->
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="Escriba correo">
+                <input type="email" id="email" name="email" placeholder="Escriba correo" pattern="[a-zA-Z0-9_-.]+@[a-z0-9._-]+\.[a-z]{2,4}" required>
                 <!--label para edad-->
                 <label for="edad">Edad</label>
-                <input type="number" id="edad" name="edad" placeholder="Escriba su edad">
+                <input type="number" id="edad" name="edad" placeholder="Escriba su edad" min="1" max="100" required>
                 <!--label con pestañas para elegir consola-->
                 <label for="consola">Consola</label>
                 <select id="consola" name="consola">
                     <!--grupo para consolas ps5-->
+                    <option value="vacio">Seleccione consola</option>
                     <optgroup label="Playstation">
-                        <option value="disabled selected">Seleccione consola</option>
                         <option value="ps5 digital">Playstation 5 Digital</option>
                         <option value="ps5 slim">Playstation 5 Slim</option>
                         <option value="ps5 pro">Playstation 5 Pro</option>
@@ -68,8 +68,8 @@
                 <label for="control">Control</label>
                 <select id="control" name="control">
                     <!--grupo para mandos ps5-->
+                    <option value="vacio">Seleccione mando</option>
                     <optgroup label="Playstation">
-                        <option value="disabled selected">Seleccione mando</option>
                         <option value="dualsense blanco/negro">Dualsense Blanco/Negro</option>
                         <option value="dualsense gris/negro"> Dualsense Gris/Negro</option>
                         <option value="dualsense verde"> Dualsense Verde</option>
@@ -85,7 +85,7 @@
                     </select>
                     <!--área para escribir comentario-->
                     <label for="comentario">Comentario</label><br>
-                    <textarea name="comentario" id="comentario">Escriba comentario(Opcional)</textarea>
+                    <textarea name="comentario" id="comentario" placeholder="Escriba comentario(Opcional)"></textarea>
                     <!--check de confirmación para poder enviar datos-->
                     <div class="privacidad">
                         <input class="checkbox" type="checkbox" id="privacidad" required>
